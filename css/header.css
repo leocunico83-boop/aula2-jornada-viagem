@@ -1,9 +1,17 @@
 .main-header {
-  /* Adicionar ... Alex */
+  background-color: var(--background-tertiary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 38px 24px;
+  position: relative;
 }
 
 .logo {
-  /* Adicionar 2 ... Alex */
+  display: inline-block;
+  width: 68px;
+  height: 64px;
 }
 
 .img-mobile {
@@ -19,7 +27,12 @@
 
 input[type="checkbox"]:checked ~ nav {
   /* Faz com que o menu de navegação seja exibido quando o checkbox estiver marcado - Seletor de irmandade*/
-  /* Adicionar 1 ... Alex */
+  display: block; /* Exibe o menu de navegação */
+  position: absolute; /* Posiciona o menu de navegação em relação ao elemento pai */
+  top: 100%; /* Posiciona o menu de navegação logo abaixo do cabeçalho */
+  left: 0; /* Alinha o menu de navegação à esquerda do cabeçalho */
+  width: 100%; /* Define a largura do menu de navegação para ocupar toda a largura do cabeçalho */
+  background-color: var(--background-tertiary-color); /* Define a cor de fundo do menu de navegação */
 }
 
 nav {
